@@ -1,1 +1,0 @@
-# Erronka-1---Bigarren-Aukera
