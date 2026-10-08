@@ -6,15 +6,16 @@
     <meta name="description" content="Bigarren Aukera - Animaliak adopzioan.">
     <title>Bigarren Aukera | Animaliak</title>
     <link rel="stylesheet" href="../Orokorra/main.css">
+    <link rel="stylesheet" href="animaliak.css">
     <link rel="icon" href="../Orokorra/Argazkiak/logosinfondo.ico" type="image/x-icon">
   </head>
   <body>
-    <header class="site-header">
-      <div class="header-inner">
-        <a class="brand" href="../Index/index.html" aria-label="Bigarren Aukera hasiera">
+    <header class="guneko-goiburua">
+      <div class="goiburu-barrualdea">
+        <a class="marka" href="../Index/index.html" aria-label="Bigarren Aukera hasiera">
           <img src="../Orokorra/Argazkiak/logosinfondo.png" alt="Bigarren Aukera logoa">
         </a>
-        <nav class="main-nav" aria-label="Nabigazio nagusia">
+        <nav class="nabigazio-nagusia" aria-label="Nabigazio nagusia">
           <ul>
             <li><a href="animaliak.html" aria-current="page">ANIMALIAK</a></li>
             <li><a href="../Produktuak/produktuak.html">PRODUKTUAK</a></li>
@@ -26,25 +27,108 @@
       </div>
     </header>
 
-    <main></main>
+    <main class="animalien-orria">
+      <section class="animalien-sarrera" aria-labelledby="animalien-izenburua">
+        <p class="goiburuko-etiketa">BIGARREN AUKERA</p>
+        <h1 id="animalien-izenburua">Ezagutu gure animaliak</h1>
+        <p>Ezagutu haien istorioak eta aurkitu zure lagun berria.</p>
+      </section>
 
-    <footer class="site-footer" id="kontaktua">
-      <div class="footer-inner">
-        <address class="contact-list">
-          <a class="contact-item" href="https://www.google.com/maps/search/?api=1&query=Lehendakari+Aguirre+67" target="_blank" rel="noopener noreferrer">
+      <section class="animalien-sarea" aria-label="Adopziorako dauden animaliak">
+        <article class="animalien-txartela">
+          <button class="animalien-botoia" type="button" data-animalia="luna">
+            <img src="Argazkiak/Gato1.png" alt="Luna, katu marraduna">
+            <span>Luna</span>
+          </button>
+        </article>
+        <article class="animalien-txartela">
+          <button class="animalien-botoia" type="button" data-animalia="simba">
+            <img src="Argazkiak/Gato2.png" alt="Simba, katu laranja">
+            <span>Simba</span>
+          </button>
+        </article>
+        <article class="animalien-txartela">
+          <button class="animalien-botoia" type="button" data-animalia="nala">
+            <img src="Argazkiak/Gato3.png" alt="Nala, hiru koloretako katua">
+            <span>Nala</span>
+          </button>
+        </article>
+        <article class="animalien-txartela">
+          <button class="animalien-botoia" type="button" data-animalia="rocky">
+            <img src="Argazkiak/Perro1.png" alt="Rocky, txakur mestizoa">
+            <span>Rocky</span>
+          </button>
+        </article>
+        <article class="animalien-txartela">
+          <button class="animalien-botoia" type="button" data-animalia="kira">
+            <img src="Argazkiak/Perro2.png" alt="Kira, artzain alemaniarra">
+            <span>Kira</span>
+          </button>
+        </article>
+        <article class="animalien-txartela">
+          <button class="animalien-botoia" type="button" data-animalia="toby">
+            <img src="Argazkiak/Perro3.png" alt="Toby, beagle txakurra">
+            <span>Toby</span>
+          </button>
+        </article>
+        <article class="animalien-txartela">
+          <button class="animalien-botoia" type="button" data-animalia="rio">
+            <img src="Argazkiak/Loro.png" alt="Río, loro berdea">
+            <span>Río</span>
+          </button>
+        </article>
+        <article class="animalien-txartela">
+          <button class="animalien-botoia" type="button" data-animalia="paco">
+            <img src="Argazkiak/Periquito.png" alt="Paco, perikito urdina">
+            <span>Paco</span>
+          </button>
+        </article>
+        <article class="animalien-txartela">
+          <button class="animalien-botoia" type="button" data-animalia="sol">
+            <img src="Argazkiak/Canario.png" alt="Sol, kanario horia">
+            <span>Sol</span>
+          </button>
+        </article>
+      </section>
+    </main>
+
+    <dialog class="animalien-elkarrizketa" aria-labelledby="elkarrizketa-izenburua">
+      <div class="elkarrizketa-edukia">
+        <button class="elkarrizketa-itxi" type="button" aria-label="Informazioa ixtea">×</button>
+        <img id="elkarrizketa-irudia" src="" alt="">
+        <div class="elkarrizketa-xehetasunak">
+          <p class="goiburuko-etiketa">INFORMAZIOA</p>
+          <h2 id="elkarrizketa-izenburua"></h2>
+          <dl>
+            <div><dt>Espeziea</dt><dd id="elkarrizketa-espeziea"></dd></div>
+            <div><dt>Arraza</dt><dd id="elkarrizketa-arraza"></dd></div>
+            <div><dt>Sexua</dt><dd id="elkarrizketa-sexua"></dd></div>
+            <div><dt>Kolorea</dt><dd id="elkarrizketa-kolorea"></dd></div>
+            <div><dt>Jaioteguna / adina</dt><dd id="elkarrizketa-adina"></dd></div>
+          </dl>
+        </div>
+      </div>
+    </dialog>
+
+    <script src="animaliak.js"></script>
+
+    <footer class="guneko-oina" id="kontaktua">
+      <div class="oin-barrualdea">
+        <address class="kontaktu-zerrenda">
+          <a class="kontaktu-elementua" href="https://www.google.com/maps/search/?api=1&query=Lehendakari+Aguirre+67" target="_blank" rel="noopener noreferrer">
             <img src="../Orokorra/Argazkiak/ubicacion.png" alt="" aria-hidden="true">
             <span>Lehendakari Aguirre, 67</span>
           </a>
-          <a class="contact-item" href="tel:+34646789878">
+          <a class="kontaktu-elementua" href="tel:+34646789878">
             <img src="../Orokorra/Argazkiak/telefono.png" alt="" aria-hidden="true">
             <span>646 78 98 78</span>
           </a>
-          <a class="contact-item" href="mailto:bigarrenaukera@gmail.com">
+          <a class="kontaktu-elementua" href="mailto:bigarrenaukera@gmail.com">
             <img src="../Orokorra/Argazkiak/email.png" alt="" aria-hidden="true">
             <span>bigarrenaukera@gmail.com</span>
           </a>
         </address>
-        <div class="social-links" aria-label="Sare sozialak">
+        <div class="sare-loturak" aria-label="Sare sozialak">
           <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="../Orokorra/Argazkiak/instagram.png" alt=""></a>
           <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X"><img src="../Orokorra/Argazkiak/x.png" alt=""></a>
           <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><img src="../Orokorra/Argazkiak/facebook.png" alt=""></a>

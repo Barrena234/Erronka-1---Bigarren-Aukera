@@ -1,4 +1,4 @@
-.hero {
+.hasiera {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
   align-items: center;
@@ -9,17 +9,17 @@
   padding: 52px 0;
 }
 
-.hero-image {
+.hasiera-irudia {
   width: 100%;
   max-height: 265px;
   object-fit: cover;
 }
 
-.hero-copy {
+.hasiera-testua {
   color: var(--orange);
 }
 
-.hero-title {
+.hasiera-izenburua {
   max-width: 570px;
   margin: 0;
   font-family: 'Playfair Display', Georgia, serif;
@@ -29,13 +29,13 @@
   text-transform: uppercase;
 }
 
-.hero-subtitle {
+.hasiera-azpititulua {
   margin: 10px 0 0;
   font-size: clamp(1rem, 1.8vw, 1.25rem);
   line-height: 1.2;
 }
 
-.hero-intro {
+.hasiera-sarrera {
   margin: 18px 0 0;
   font-family: 'DM Sans', Arial, sans-serif;
   font-size: clamp(1rem, 1.8vw, 1.25rem);
@@ -44,22 +44,22 @@
 }
 
 @media (max-width: 760px) {
-  .hero {
+  .hasiera {
     grid-template-columns: 1fr;
     width: min(100% - 32px, 560px);
     min-height: auto;
     padding: 40px 0 48px;
   }
 
-  .hero-image {
+  .hasiera-irudia {
     max-height: none;
   }
 
-  .hero-copy {
+  .hasiera-testua {
     text-align: center;
   }
 
-  .hero-title {
+  .hasiera-izenburua {
     margin: 0 auto;
   }
 }
