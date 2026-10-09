@@ -6,7 +6,9 @@
     <meta name="description" content="Bigarren Aukera - Kontaktua.">
     <title>Bigarren Aukera | Kontaktua</title>
     <link rel="stylesheet" href="../Orokorra/main.css">
+    <link rel="stylesheet" href="kontaktua.css">
     <link rel="icon" href="../Orokorra/Argazkiak/logosinfondo.ico" type="image/x-icon">
+    <script src="kontaktua.js" defer></script>
   </head>
   <body>
     <header class="guneko-goiburua">
@@ -26,7 +28,48 @@
       </div>
     </header>
 
-    <main></main>
+    <main>
+      <section class="contacto">
+        <div class="contacto-contenido">
+          <h1>Contacta con nosotros</h1>
+          <form class="formulario-contacto" id="formulario-contacto">
+            <div class="campo">
+              <label for="nombre">Nombre y apellido</label>
+              <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+            </div>
+
+            <div class="campo">
+              <label for="telefono">Número de teléfono</label>
+              <input type="tel" id="telefono" name="telefono" autocomplete="tel" required>
+            </div>
+
+            <div class="campo">
+              <label for="correo">Correo electrónico</label>
+              <input type="email" id="correo" name="correo" autocomplete="email" required>
+            </div>
+
+            <div class="campo">
+              <label for="motivo">Motivo del contacto</label>
+              <select id="motivo" name="motivo" required>
+                <option value="" selected disabled>Selecciona una opción</option>
+                <option value="dar-en-adopcion">Dar en adopción</option>
+                <option value="adoptar">Adoptar</option>
+                <option value="consulta-general">Consulta general</option>
+                <option value="contactar-con-nosotros">Contactar con nosotros</option>
+              </select>
+            </div>
+
+            <div class="campo campo-mensaje">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="7" required></textarea>
+            </div>
+
+            <button type="submit">Enviar</button>
+            <p class="estado-formulario" id="estado-formulario" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
 
     <footer class="guneko-oina" id="kontaktua">
       <div class="oin-barrualdea">
