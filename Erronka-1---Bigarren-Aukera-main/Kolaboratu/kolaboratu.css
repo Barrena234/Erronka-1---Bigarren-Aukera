@@ -1,0 +1,54 @@
+h1 {
+    color: #c8652c;
+    font-family: 'Playfair Display', Georgia, serif;
+    margin-left: 50px;
+}
+
+p {
+    margin-left: 50px;
+}
+
+.maincolab {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.colaborar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: stretch;
+}
+
+.col-izquierda {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.col-derecha {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.imgkol {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.bisunt {
+    height: 50px;
+    width: 250px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.foto-lateral {
+    max-height: 100%;
+    object-fit: contain;
+}

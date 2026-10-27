@@ -1,0 +1,34 @@
+.taulak{
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    border: solid 1px var(--orange);
+    
+    font-family: sans-serif;
+}
+table{
+    table-layout: fixed;
+    font-size: 14px;
+    border-collapse: collapse;
+    width: 100%;
+    
+}
+thead{
+    background: #315f5b;
+    color: white;
+    
+
+}
+th{
+    padding: 20px 15px;
+    text-transform: uppercase;
+    border: solid #315f5b;
+}
+td{
+    background: #d7fdf0;
+    padding: 15px;
+    border-bottom: solid #315f5b;
+    text-align: center;
+    border: solid #315f5b ;
+    
+}

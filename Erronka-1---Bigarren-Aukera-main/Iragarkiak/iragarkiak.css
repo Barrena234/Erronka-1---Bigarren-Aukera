@@ -1,0 +1,49 @@
+img {
+    width: 300px;
+    height: 200px;
+
+}
+
+.iragarkiak {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.iragarki-txartelak img {
+    border-radius: 18px;
+
+}
+
+.iragarki-txartelak {
+    overflow: hidden;
+    border-radius: 18px;
+    padding: 20px;
+}
+
+.iragarki-txartelak:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(30, 37, 36, 0.16);
+}
+
+video {
+    border-radius: 18px;
+    width: 100%;
+}
+
+h1 {
+    color: #c8652c;
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+h5 {
+    color: #477a75;
+}
+
+p {
+    font-family: 'Playfair Display', Georgia, serif;
+}
